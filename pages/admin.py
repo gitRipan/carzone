@@ -12,7 +12,7 @@ class TeamAdmin(admin.ModelAdmin):
     list_display = ('id', 'thumbnail', 'first_name',
                     'designation', 'created_date')
     list_display_links = ('id', 'first_name', 'thumbnail')
-    search_fields = ('first_name', 'last_name', 'designati on')
+    search_fields = ('first_name', 'last_name', 'designation')
 
 
 admin.site.register(Team, TeamAdmin)
